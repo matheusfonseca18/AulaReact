@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(255, 249, 232);
+    text-align: justify;
+}
+
+.App {
+    margin: 5rem;
+}
+
+.titu {
+    color: orange;
+}

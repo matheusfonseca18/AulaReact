@@ -1,14 +1,14 @@
-import './App.css';
+import './Components/style.css';
+import PrimeiroComponente from './Components/PrimeiroComponente';
+import SegundoComponente from './Components/SegundoComponente';
 
 function App() {
+  let nome = "Matheus"
   return (
     <div className="App">
-      <h1>Olá Mundo!</h1>
-      <p>Tô escrevendo aqui pra testar</p>
-      <div className="test">
-        <h4>Título de teste</h4>
-        
-      </div>
+      <h1>Olá, {nome}!</h1>
+      <PrimeiroComponente/>
+      <SegundoComponente/>
     </div>
   );
 }
