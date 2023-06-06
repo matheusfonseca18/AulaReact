@@ -1,7 +1,7 @@
 const PrimeiroComponente = () => {
     return (
         <div>
-            <h2 class="titu">Criando componente</h2>
+            <h2 className="titu">Criando componente</h2>
             <p>Parágrafo do primeiro componente</p>
         </div>
     )
