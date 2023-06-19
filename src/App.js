@@ -1,12 +1,15 @@
-import './Components/style.css';
-import PrimeiroComponente from './Components/PrimeiroComponente';
-import SegundoComponente from './Components/SegundoComponente';
-import ComponenteImagem from './Components/ComponenteImagem';
-import Componente3 from './Components/Componente3';
+import "./Components/style.css";
+import PrimeiroComponente from "./Components/PrimeiroComponente";
+import SegundoComponente from "./Components/SegundoComponente";
+import ComponenteImagem from "./Components/ComponenteImagem";
+import Componente3 from "./Components/Componente3";
+import HooksAula1 from "./Components/HooksAula1";
+import AulaProps from "./Components/AulaProps";
 
 //link de img
 import gato2 from './Assets/gato2.jpg'
 let gatoLink = <img src="https://www.petsupport.com.br/wp-content/uploads/2021/09/necessidades-dos-gatos-1-1024x576.jpg" alt="gato3" width="300"/>
+
 
 function App() {
 
@@ -21,14 +24,17 @@ const RandomMsg2 = () => {
   return Paragra.innerHTML = (`ebaa`)
 };
 
-
-
-let nota = document.querySelector (`input`);
+let nota = document.querySelector (`.isso`);
 
 const RandomMostra = () => {
-  let mostra = document.querySelector (`.showw`)
-  return mostra.innerHTML = (nota)
+  let Mostra = document.querySelector (`.showw`);
+  return Mostra.innerHTML = (`${nota}`)
 }
+
+let Nome = "Matheus Fonseca"
+let Curso = "Front-end"
+let Ra = 12345
+let Media = 8
 
   return (
     <div className="App">
@@ -52,12 +58,17 @@ const RandomMostra = () => {
         <Componente3/>
         <p style={{color: "black"}}>CSS inline</p>
 
-        <input type="palavra" />
+        <input type="number" className='isso'/>
         <button onClick={RandomMostra}>mostra</button>
 
         <p className = "showw" style={nota >= 6 ? {color: "green"} : {color: "red"}}>0</p>
 
       </div>
+      <h3>Outra aula de react</h3>
+      <HooksAula1 />
+      <AulaProps Nome="Matheus" Curso="Programação Web" Ra={123456789} Media={10}/>
+      <AulaProps Nome={Nome} Curso={Curso} Ra={Ra} Media={Media}/>
+
     </div>
   );
 }
