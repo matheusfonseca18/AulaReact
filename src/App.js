@@ -5,6 +5,7 @@ import ComponenteImagem from "./Components/ComponenteImagem";
 import Componente3 from "./Components/Componente3";
 import HooksAula1 from "./Components/HooksAula1";
 import AulaProps from "./Components/AulaProps";
+import Blank from "./Components/Atividade/Blank"
 
 //link de img
 import gato2 from './Assets/gato2.jpg'
@@ -36,11 +37,19 @@ let Curso = "Front-end"
 let Ra = 12345
 let Media = 8
 
+const tema = () => {
+  let body = document.querySelector(`.App`);
+  body.classList.toggle (`dark`)
+
+}
+
   return (
     <div className="App">
+
       <h1>Olá, {nome}!</h1>
       <PrimeiroComponente/>
       <SegundoComponente/>
+        <div className="tema" onClick={tema}>Tema</div>
       <h3>link img</h3>
       <p>imagem pelo public</p>
       <img src="gato.jpg" alt="gato1" width ="300"/>
@@ -69,6 +78,8 @@ let Media = 8
       <AulaProps Nome="Matheus" Curso="Programação Web" Ra={123456789} Media={10}/>
       <AulaProps Nome={Nome} Curso={Curso} Ra={Ra} Media={Media}/>
 
+      <Blank />
+      
     </div>
   );
 }

@@ -1,12 +1,25 @@
-body {
+.App {
+    /* margin: 5rem; */
+    transition: 0.5s;
     /* background-color: rgb(255, 249, 232); */
     text-align: justify;
+    color: black;
 }
 
-.App {
-    margin: 5rem;
-}
+/* .tema {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+    height: 1.5%;
+    width: 3rem;
+    background-color: red;
+} */
 
 .titu {
     color: orange;
 }
+/* .App .dark {
+    background-color: rgb(161, 38, 38);
+    color:  white;
+} */
