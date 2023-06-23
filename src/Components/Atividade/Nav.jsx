@@ -4,7 +4,7 @@ function Nav() {
   return (
     <div>
         <nav>
-            Nav
+          <p>Logo</p>
         </nav>
     </div>
   )

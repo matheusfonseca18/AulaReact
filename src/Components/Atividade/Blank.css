@@ -1,4 +1,36 @@
-.blank {
-    height: 200rem;
-    background-color: white;
+img {
+    width: 100%;
+}
+
+.titulo {
+    position: absolute;
+    padding: 18rem 10rem;
+    font-size: 3rem;
+}
+
+.subT {
+    position: absolute;
+    padding: 23rem 10rem;
+}
+
+.conta , .baixar {
+    position: absolute;
+    padding: 1rem;
+    scale: 1.7;
+}
+
+.conta {
+    margin: 44rem 0 0 14rem;
+    border: solid 0.1rem blue;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    color: blue;
+}
+
+.baixar {
+    margin: 44rem 0 0 30rem;
+    border: solid 0.1rem aliceblue;
+    border-radius: 0.5rem;
+    background-color: blue;
+    color: aliceblue;
 }

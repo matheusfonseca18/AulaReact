@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import "./Comp1.css"
 
 function Comp1() {
   return (
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tenetur totam, illo numquam et nostrum odit iste fugit itaque maxime asperiores quis repellat repudiandae sed dignissimos? Quidem quasi minima ad?</div>
-  )
+    <div>
+      <h2 className="benef">Benefícios do TickTick no seu dia a dia</h2>
+    </div>
+  );
 }
 
-export default Comp1
+export default Comp1;

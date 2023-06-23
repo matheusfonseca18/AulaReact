@@ -79,7 +79,6 @@ const tema = () => {
       <AulaProps Nome={Nome} Curso={Curso} Ra={Ra} Media={Media}/>
 
       <Blank />
-      
     </div>
   );
 }
